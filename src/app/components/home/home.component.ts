@@ -32,13 +32,13 @@ import { HousingService } from '../../housing.service';
   <nav class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-2 flex items-center justify-between">
     <div class="text-xl font-bold">
-      Logo hoặc Tên ứng dụng của bạn
+      truyện tranh vn
     </div>
 
     <form class="flex items-center space-x-2">
       <input 
         type="text" 
-        placeholder="Filter by city" 
+        placeholder="Search.." 
         #filter
         class="border rounded-md py-2 px-3 focus:outline-none focus:ring focus:ring-blue-500"
       />
