@@ -1,0 +1,18 @@
+
+
+
+
+  <section class="results">
+    <app-card
+      *ngFor="let hs of housingLocationList"
+      [housingLocation]="hs"
+    ></app-card>
+  </section>
+
+  <div class="pagination">
+    <app-pagination></app-pagination>
+  </div>
+
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>

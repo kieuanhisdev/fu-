@@ -1,0 +1,23 @@
+.slide-bar{
+    height: 500px;
+    width: 100%;
+}
+
+.pagination{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+}
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+    /* width: 1600px; */
+  }
