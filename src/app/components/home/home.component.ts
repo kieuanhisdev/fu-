@@ -31,9 +31,16 @@ import { HousingService } from '../../housing.service';
   <section>
   <nav class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-2 flex items-center justify-between">
-    <div class="text-xl font-bold">
-      truyện tranh vn
-    </div>
+    <div class="logo" ><img src="https://play-lh.googleusercontent.com/FBhvLNtxHvTB2XZqEJVryI9R8uuYgvpWY4U9uw_A8ysDdml4YQ5Ndwq6sv2XMTtpLX8" ></div>
+    
+    <button style="margin-left: -260px;" class="styled-heading"><span>TRUYENTRANHVN</span></button>
+    
+    
+    <button   style="margin-left: 90px;">trang chu</button>
+    
+    <button  style="margin-left: -250px;">the loai</button>
+    
+    <button   style="margin-left: -250px;">xep hang</button>
 
     <form class="flex items-center space-x-2">
       <input 
@@ -43,6 +50,7 @@ import { HousingService } from '../../housing.service';
         class="border rounded-md py-2 px-3 focus:outline-none focus:ring focus:ring-blue-500"
       />
       <button 
+        
         type="button" 
         (click)="filterResults(filter.value)"
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none"
@@ -50,6 +58,8 @@ import { HousingService } from '../../housing.service';
         Search
       </button>
     </form>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none" style="margin-left:-270px;">login</button>
   </div>
 </nav>
     </section>
@@ -57,7 +67,7 @@ import { HousingService } from '../../housing.service';
     <app-slide></app-slide>
     </div>
     <section class="results">
-      <app-card
+      <app-card class="card"
         *ngFor="let housingLocation of filteredLocationList"
         [housingLocation]="housingLocation"
       ></app-card>
