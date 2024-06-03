@@ -96,7 +96,7 @@ import { HousingService } from '../../housing.service';
     <div class="slide-bar">
       <app-slide></app-slide>
     </div>
-    <div>Danh sach truyen</div> 
+    <div class="list">Danh sach truyen</div> 
     <section class="results">
       
       <app-card

@@ -19,7 +19,7 @@
     margin-top: 20px;
     justify-content: space-evenly;
     width: 1300px;
-    margin-left: 250px;
+    margin-left: 270px;
   }
 
 .container{
@@ -95,4 +95,13 @@
 .styled-heading span:hover::before,
 .styled-heading span:hover::after {
     transform: scaleX(1);
+}
+
+.list{
+    margin-left: 270px;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-bottom: 50px;
+
 }
