@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HousingService } from '../../housing.service';
 import { HousingLocation } from '../../housinglocation';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
+
 @Component({
     selector: 'app-details',
     standalone: true,
@@ -12,7 +13,7 @@ import { NavBarComponent } from "../nav-bar/nav-bar.component";
     template: `
     <p>details works! {{housingLocationid}}</p>
   `,
-    imports: [CommonModule, NavBarComponent]
+    imports: [CommonModule, NavBarComponent, RouterModule]
 })
 export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
