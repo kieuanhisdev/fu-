@@ -3,15 +3,16 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HousingService } from '../../housing.service';
 import { HousingLocation } from '../../housinglocation';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 @Component({
-  selector: 'app-details',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './details.component.html',
-  styleUrl: './details.component.css',
-  template: `
+    selector: 'app-details',
+    standalone: true,
+    templateUrl: './details.component.html',
+    styleUrl: './details.component.css',
+    template: `
     <p>details works! {{housingLocationid}}</p>
-  `
+  `,
+    imports: [CommonModule, NavBarComponent]
 })
 export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
