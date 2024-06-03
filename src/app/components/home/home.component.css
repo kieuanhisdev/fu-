@@ -14,13 +14,12 @@
 
 .results {
     display: grid;
-    column-gap: -30px;
-    row-gap: 80px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-    margin-top: 50px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-top: 20px;
     justify-content: space-evenly;
-    /* width: 1600px; */
-    margin-top: 60px;
+    width: 1300px;
+    margin-left: 250px;
   }
 
 .container{
@@ -36,7 +35,7 @@
 }
 
 .styled-heading {
-    font-size: 25px;
+    
     color: #000000;
     text-align: center;
     text-transform: uppercase;
